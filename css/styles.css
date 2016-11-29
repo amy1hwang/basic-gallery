@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+
+.header, .container, .galleryItem {
+  border:1px dashed #000;
+  margin: 10px;
+  padding: 10px;
+}
+
+.container {
+  width: 95%;
+  margin: 10px auto;
+  padding: 0;
+}
+
+.galleryItem {
+  margin: 10px 0;
+  padding: 10px;
+}
+
+img {
+  border-radius: 5px;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .galleryItem {
+    float: left;
+    width: 45%;
+  	margin: 2% 2.5% 30px 2.5%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .galleryItem {
+    float: left;
+    width: 30%;
+    margin: 2% 1.6% 30px 1.6%;
+  }
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
